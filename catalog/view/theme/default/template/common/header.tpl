@@ -133,8 +133,27 @@
            
           </div>
         </div>
-        <div class="menu-item">
-          <a href="index.php?route=information/contact">COLLECTION</a>
+        <div class="menu-item dropdown">
+          <a class="dropbtn" href="#">COLLECTION</a>
+          <div class="dropdown-content "style="width: 1000px;margin-left:-250px;margin-top:5px;">
+            <div class="row " style="padding:2%;">
+              <div class="col-md-4">
+                
+                  <a href="">RECYCLED PAPER PENCILS</a>
+                  <a href="">RULER DIARY</a>
+                  <a href="">WRITE & SKETCH</a>
+                  <a href="">BESTSELLERS</a>
+              </div>
+              <div class="col-md-4">
+                <img src="image/new/b1.jpg" alt="" width="100%">
+              </div>
+              <div class="col-md-4">
+                <img src="image/new/b2.jpg" alt="" width="100%">
+              </div>
+            </div>
+           
+          </div>
+          
         </div>
         <div class="menu-item">
           <a href="index.php?route=information/contact">CONTACT US</a>
