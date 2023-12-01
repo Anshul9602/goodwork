@@ -1,0 +1,27 @@
+{{header}}
+<style>
+{{custom_style}}
+</style>
+
+    {% include template('partial/d_layout_open') %}
+        <div class="bm">
+          
+           <a href="index.php?route=extension/d_blog_module/category&category_id=1"> <h2 style="font-weight:300; text-align:center; "><img src="image/daily.png" style="width:70px"/> Inspiration</h2>
+          </a>
+           <br />
+            {% if posts %}
+                {% include template(layout_template) with posts %}
+            {% endif %}
+
+            {% if not posts and post_display_on_main == false %}
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                    <h2>Coming Soon</h2>
+              
+                    </div>
+                </div>
+                
+            {% endif %}
+        </div>
+    {% include template('/partial/d_layout_close') %}
+{{footer}}

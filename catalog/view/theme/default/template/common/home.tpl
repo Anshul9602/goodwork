@@ -1,0 +1,340 @@
+<?php echo $header; ?>
+<script type="text/javascript" src="catalog/view/javascript/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css" />
+
+<style>
+  @media only screen and (max-width: 400px) {
+    #clockdiv {
+      font-size: 15px;
+    }
+
+    #clockdiv div>span {
+      padding: 13px;
+    }
+
+    .smalltext {
+      font-size: 10px;
+    }
+  }
+
+  .slick-prev {
+    left: 100px;
+  }
+
+  .slick-next {
+    right: 100px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: white;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-family: system-ui;
+    font-size: 23px;
+    line-height: 1;
+    opacity: 0.75;
+    color: rgb(0, 0, 0);
+  }
+</style>
+
+
+<section id="top-banner" style="padding-top: 0px;">
+  <div class="row">
+    <div class="slider-khatu">
+      <?php foreach ($banners as $banner) { ?>
+      <?php if ($banner['link']) { ?>
+      <a href="<?php echo $banner['link']; ?>" style="position: relative;">
+        <img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" class="img-responsive" />
+      </a>
+
+      <?php } else { ?>
+      <img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" class="img-responsive" />
+      <?php } ?>
+      <?php } ?>
+    </div>
+  </div>
+</section>
+
+<section id="banner-2">
+  <div class="container">
+    <div class="ell_container">
+      <div id="shopByCategory">
+        <div>
+          <h2>shop by categories <!----></h2>
+          <p class="f16">Explore exquisite home collection based on our ethos of six brand pillars <!----></p>
+          <div class="row">
+            <div class="col-md-2">
+<img src="" alt="" width="100%">
+<h4 style=" font-weight: 100;">TREND 2022</h4>
+            </div>
+          </div>
+        </div>
+      </div><!---->
+      
+    </div>
+
+
+  </div>
+</section>
+<section id="banner-2">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12" style="padding: 0px">
+        <div class="collection-div-left">
+          <h4 class="mb-5 cursive-font">News Collection</h4>
+          <h1 style="color: #333;" class="kepler">
+            THE LATEST TRENDS <br />
+            ABSTRACT COLLECTION 2021
+          </h1>
+          <img src="image/new/b1.jpg" class="img-responsive" style="padding: 6em 137px 0px 0px;" alt="">
+          <div class="collection-inner-div">
+            <h4 style=" color: #ff8429;font-weight: 100;">TREND 2022</h4>
+            <h2 style="text-transform:uppercase">Recycled paper pencils </h2>
+            <button><a href="index.php?route=product/category&path=62">SHOP NOW</a></button>
+          </div>
+          <img src="image/new/b2.jpg" class="img-responsive" style="margin-left:65px;padding: 0em 0px 0px 60px;" alt="">
+          <div class="overlay-div">
+            <h4 style="color: #ff8429;font-weight: 100;">TREND 2022</h4>
+            <h2 style="padding: 0px 45px 10px 0px; text-transform:uppercase"> Ruler diary </h2>
+            <button><a href="index.php?route=product/category&path=62">SHOP NOW</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="collection-div">
+          <img src="image/new/b3.jpg" class="img-responsive" style="padding: 0px 0px 0px 70px;" alt="">
+          <div class="overlay-div">
+            <h4 style="color: #ff8429;font-weight: 100;">TREND 2022</h4>
+            <h2> 2022 <br />Bestsellers! </h2>
+            <button><a href="index.php?route=product/category&path=64">SHOP NOW</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <img src="image/new/b4.jpg" class="img-responsive" style="padding: 7em 0em 0em 10em;" alt="">
+        <div class="collection-last-div">
+          <h4 style="color: #ff8429;font-weight: 100;">TREND 2022</h4>
+          <h1>Write & Sketch </h1>
+          <button><a href="index.php?route=product/category&path=62">SHOP NOW</a></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section style="display:none" id="deal-of-days">
+  <div class="container">
+    <div class="row" style="background: #f3f2ee;">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="inner-div-deal">
+          <h4 style="color: red;">DEAL OF THE DAYS</h4>
+          <h2>BEE-UTIFUL NOTEBOOK</h2>
+
+          <!-- ====================TIMER==================== -->
+          <div id="clockdiv">
+            <div>
+              <span class="days"></span>
+              <div class="smalltext">Days</div>
+            </div>
+            <span>:</span>
+            <div>
+              <span class="hours"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <span>:</span>
+            <div>
+              <span class="minutes"></span>
+              <div class="smalltext">Minutes</div>
+            </div>
+            <span>:</span>
+            <div>
+              <span class="seconds"></span>
+              <div class="smalltext">Seconds</div>
+            </div>
+          </div>
+          <!-- ====================TIMER==================== -->
+          <div class="deal-btn-div">
+            <a class="deal-btn" href="#">SHOP NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <!-- IMAGE -->
+        <img src="catalog/view/theme/default/image/goodwork_home/deal-of-the-day.png" class="img-responsive"
+          alt="DEAL-OF-THE-DAYS">
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function getTimeRemaining(endtime) {
+    const total = Date.parse(endtime) - Date.parse(new Date());
+    const seconds = Math.floor((total / 1000) % 60);
+    const minutes = Math.floor((total / 1000 / 60) % 60);
+    const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+    const days = Math.floor(total / (1000 * 60 * 60 * 24));
+
+    return {
+      total,
+      days,
+      hours,
+      minutes,
+      seconds
+    };
+  }
+
+  function initializeClock(id, endtime) {
+    const clock = document.getElementById(id);
+    const daysSpan = clock.querySelector('.days');
+    const hoursSpan = clock.querySelector('.hours');
+    const minutesSpan = clock.querySelector('.minutes');
+    const secondsSpan = clock.querySelector('.seconds');
+
+    function updateClock() {
+      const t = getTimeRemaining(endtime);
+
+      daysSpan.innerHTML = t.days;
+      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+      if (t.total <= 0) {
+        clearInterval(timeinterval);
+      }
+    }
+
+    updateClock();
+    const timeinterval = setInterval(updateClock, 1000);
+  }
+
+  const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+  initializeClock('clockdiv', deadline);
+</script>
+
+<section id="banner-2">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12 col-md-12 col-sm-12" style="padding: 40px 0px;">
+        <h4 class="mb-5 cursive-font">Top sale on this week</h4>
+        <h1 style="color: #333;" class="kepler">
+          NEW SUMMER COLLECTION
+        </h1>
+      </div>
+      <div class=" col-lg-12 col-md-12 col-sm-12">
+        <?php for($j=0; $j< sizeof($products1);$j++){?>
+
+        <div class="col-lg-3 col-md-6 col-sm-12" style="padding: 1em;">
+          <div class="image-div" style="position: relative;">
+            <img class="img-responsive" src="<?php echo $products1[$j]['thumb']?>" alt="">
+            <a class="cart-hover" href="">ADD TO CART</a>
+          </div>
+          <?php for ($i = 1; $i <= 5; $i++) { ?>
+          <?php if ($products1[$j]['rating'] < $i) { ?>
+          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+          <?php } else { ?>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
+              class="fa fa-star-o fa-stack-1x"></i></span>
+          <?php } ?>
+          <?php } ?>
+          <a href="<?php echo $products1[$j]['href']?>">
+            <h4>
+              <?php echo $products1[$j]['name']?>
+            </h4>
+            <p>
+              <?php echo $products1[$j]['price']?>
+            </p>
+            <!-- <p><?php echo $products1[$j]['rating']?></p> -->
+          </a>
+        </div>
+
+        <?php }?>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section style="padding-top: 0px;">
+  <div class="container" style="background: #f8f8f8;">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="stay-div">
+          <img src="catalog/view/theme/default/image/goodwork_home/stay.png" alt="Stay">
+          <div class="stay-text-div">
+            <h2>Stay in the know !</h2>
+            <p>Be the first to know about New Arrivals, Look Books, Sales & Promos!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12" style="display: flex;padding: 3em 11em;">
+        <input type="text" placeholder="Email" class="form-control"> <button class="form-button"> SUBSCRIBE</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  $(".slider-khatu").slick({
+    dots: true,
+    infinite: true,
+    arrow: true,
+    speed: 1000,
+    fade: true,
+    cssEase: "ease-in-out",
+    autoplay: true,
+    autoplaySpeed: 4000,
+  });
+
+  $(".product-slider").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+  });
+
+  $(".slider-trend").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    speed: 2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
+  });
+</script>
+<?php echo $footer; ?>
