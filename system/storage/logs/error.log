@@ -2219,3 +2219,8 @@
 2023-12-01 11:22:05 - PHP Warning:  Undefined variable $necat in C:\xampp\htdocs\good\catalog\view\theme\default\template\common\home.tpl on line 132
 2023-12-01 11:22:05 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\good\catalog\view\theme\default\template\common\home.tpl on line 132
 2023-12-01 11:22:05 - PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\good\catalog\view\theme\default\template\common\home.tpl on line 132
+2023-12-01 12:03:19 - PHP Warning:  Undefined variable $class in C:\xampp\htdocs\good\catalog\view\theme\default\template\product\product.tpl on line 520
+2023-12-01 12:03:19 - PHP Warning:  Undefined variable $class in C:\xampp\htdocs\good\catalog\view\theme\default\template\product\product.tpl on line 520
+2023-12-01 12:03:19 - PHP Warning:  Undefined variable $class in C:\xampp\htdocs\good\catalog\view\theme\default\template\product\product.tpl on line 520
+2023-12-01 12:03:19 - PHP Warning:  Undefined variable $class in C:\xampp\htdocs\good\catalog\view\theme\default\template\product\product.tpl on line 520
+2023-12-01 12:03:19 - PHP Warning:  Undefined variable $class in C:\xampp\htdocs\good\catalog\view\theme\default\template\product\product.tpl on line 520

@@ -125,11 +125,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
                 <div class="" style="padding: 1em;">
                   <div class="image-div" style="position: relative;">
-                    <img class="img-responsive" src="<?php echo $newcat[$j]['thumb']?>" alt="">
-                    <a class="cart-hover" href="">ADD TO CART</a>
+                    <a href="<?php echo $newcat[$j]['href']?>"><img class="img-responsive" src="<?php echo $newcat[$j]['thumb']?>" alt=""></a>
+                    
                   </div>
                   
-                  <a href="<?php echo $necat[$j]['href']?>">
+                  <a href="<?php echo $newcat[$j]['href']?>">
                     <h4>
                       <?php echo $newcat[$j]['name']?>
                     </h4>
@@ -152,22 +152,22 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       <div class="splide sp2" role="group" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
           <ul class="splide__list">
-            <?php for($j=0; $j< sizeof($newcat);$j++){?>
+            <?php for($j=0; $j< sizeof($bestcat);$j++){?>
             <li class="splide__slide">
             
 
                 <div class="" style="padding: 1em;">
                   <div class="image-div" style="position: relative;">
-                    <img class="img-responsive" src="<?php echo $newcat[$j]['thumb']?>" alt="">
-                    <a class="cart-hover" href="">ADD TO CART</a>
+                    <a href="<?php echo $bestcat[$j]['href']?>"><img class="img-responsive" src="<?php echo $bestcat[$j]['thumb']?>" alt=""></a>
+                   
                   </div>
                   
-                  <a href="<?php echo $necat[$j]['href']?>">
+                  <a href="<?php echo $bestcat[$j]['href']?>">
                     <h4>
-                      <?php echo $newcat[$j]['name']?>
+                      <?php echo $bestcat[$j]['name']?>
                     </h4>
                     <p>
-                      <?php echo $newcat[$j]['price']?>
+                      <?php echo $bestcat[$j]['price']?>
                     </p>
                     <!-- <p><?php echo $products1[$j]['rating']?></p> -->
                   </a>
@@ -214,37 +214,37 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             THE LATEST TRENDS <br />
             ABSTRACT COLLECTION 2024
           </h1>
-          <img src="image/new/b1.jpg" class="img-responsive" style="padding: 6em 137px 0px 0px;" alt="">
+          <a href="index.php?route=product/category&path=62"><img src="image/new/b1.jpg" class="img-responsive" style="padding: 6em 137px 0px 0px;" alt="">
           <div class="collection-inner-div">
             <h4 style=" color: #ff8429;font-weight: 100;">TREND 2024</h4>
             <h2 style="text-transform:uppercase">Recycled paper pencils </h2>
-            <button><a href="index.php?route=product/category&path=62">SHOP NOW</a></button>
-          </div>
-          <img src="image/new/b2.jpg" class="img-responsive" style="margin-left:65px;padding: 0em 0px 0px 60px;" alt="">
+            <button>SHOP NOW</a></button>
+          </div></a>
+          <a href="index.php?route=product/category&path=62"><img src="image/new/b2.jpg" class="img-responsive" style="margin-left:65px;padding: 0em 0px 0px 60px;" alt="">
           <div class="overlay-div">
             <h4 style="color: #ff8429;font-weight: 100;">TREND 2024</h4>
             <h2 style="padding: 0px 45px 10px 0px; text-transform:uppercase"> Ruler diary </h2>
-            <button><a href="index.php?route=product/category&path=62">SHOP NOW</a></button>
-          </div>
+            <button>SHOP NOW</button>
+          </div></a>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="collection-div">
-          <img src="image/new/b3.jpg" class="img-responsive" style="padding: 0px 0px 0px 70px;" alt="">
+          <a href="index.php?route=product/category&path=64"><img src="image/new/b3.jpg" class="img-responsive" style="padding: 0px 0px 0px 70px;" alt="">
           <div class="overlay-div">
             <h4 style="color: #ff8429;font-weight: 100;">TREND 2024</h4>
             <h2> 2024 <br />Bestsellers! </h2>
-            <button><a href="index.php?route=product/category&path=64">SHOP NOW</a></button>
-          </div>
+            <button>SHOP NOW</button>
+          </div></a>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12">
-        <img src="image/new/b4.jpg" class="img-responsive" style="padding: 7em 0em 0em 10em;" alt="">
+        <a href="index.php?route=product/category&path=62"> <img src="image/new/b4.jpg" class="img-responsive" style="padding: 7em 0em 0em 10em;" alt="">
         <div class="collection-last-div">
           <h4 style="color: #ff8429;font-weight: 100;">TREND 2024</h4>
           <h1>Write & Sketch </h1>
-          <button><a href="index.php?route=product/category&path=62">SHOP NOW</a></button>
-        </div>
+          <button>SHOP NOW</button>
+        </div></a>
       </div>
     </div>
 
@@ -399,7 +399,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
         <div class="col-lg-3 col-md-6 col-sm-12" style="padding: 1em;">
           <div class="image-div" style="position: relative;">
-            <img class="img-responsive" src="<?php echo $products1[$j]['thumb']?>" alt="">
+            <a href="<?php echo $products1[$j]['href']?>"><img class="img-responsive" src="<?php echo $products1[$j]['thumb']?>" alt=""></a>
             <a class="cart-hover" href="">ADD TO CART</a>
           </div>
           <?php for ($i = 1; $i <= 5; $i++) { ?>

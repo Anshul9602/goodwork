@@ -9,10 +9,12 @@
 
       <div class="row">
         <div class="col-sm-4">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7115.50570838823!2d75.79632097529117!3d26.911337632512538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db401cf6c4637%3A0xdfb356591e8c9020!2sGoodWork!5e0!3m2!1sen!2sin!4v1626930723326!5m2!1sen!2sin" style="border:0; width:100%; height:300px" allowfullscreen="" loading="lazy"></iframe>
+         
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.72339580343!2d75.80098317602351!3d26.912272276647276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db401cf6c4637%3A0xdfb356591e8c9020!2sGoodWork!5e0!3m2!1sen!2sin!4v1701434784250!5m2!1sen!2sin" style="border:0; width:100%; height:300px" allowfullscreen="" loading="lazy"></iframe>
           <br />
-          <h5> <i class="fa fa-map-marker"></i>&nbsp;&nbsp; F14, Ramesh Marg,C-Scheme, Jaipur, India</h5><br />
-          <h5><i class="fa fa-phone"></i> &nbsp;&nbsp;0141-4107341</h5><br />
+          <h5> <i class="fa fa-map-marker"></i>&nbsp;&nbsp;  D-4 Malviya Marg, C-Scheme 
+            Opposite westside store, Jaipur 302002</h5><br />
+          <h5><i class="fa fa-phone"></i> &nbsp;&nbsp;+91 97999 99204</h5><br />
           <h5><i class="fa fa-envelope"></i> &nbsp;&nbsp;info@goodworkdaily.com</h5>
 
         </div>

@@ -39,7 +39,7 @@
       color: #ccc;
    }
 </style>
-<section>
+<section style="display:none;">
    <div class="container">
       <hr style="border: 1px solid #333;margin-bottom: 0px;margin-top: 0px;" class="sep">
       <div class="row">
@@ -68,8 +68,9 @@
       <div class="row">
          <div class="col-lg-4 col-md-4 col-sm-12">
             <div class="footer-div-1">
-               <h6 style="color: white;"> <i class="fa fa-map-marker"></i>&nbsp;&nbsp; F14, Ramesh Marg, C-Scheme, Jaipur, India</h6>
-               <h6 style="color: white;"><i class="fa fa-phone"></i> &nbsp;&nbsp;0141-4107341/+91 9799 99204</h6>
+               <h6 style="color: white;"> <i class="fa fa-map-marker"></i>&nbsp;&nbsp;  D-4 Malviya Marg, C-Scheme 
+Opposite westside store, Jaipur 302002</h6>
+               <h6 style="color: white;"><i class="fa fa-phone"></i> &nbsp;&nbsp;+91 97999 99204</h6>
                <h6 style="color: white;"><i class="fa fa-envelope"></i> &nbsp;&nbsp;info@goodworkdaily.com</h6>
             </div>
          </div>
@@ -94,8 +95,10 @@
                      <ul>
                         <li><a href="">About Us</a></li>
 
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Collection</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        
                      </ul>
                   </div>
                </div>
@@ -104,7 +107,7 @@
                      <ul>
                         <li><a href="">Privacy Policy</a></li>
                         <li><a href="">Returns</a></li>
-                        <li><a href="index.php?route=extension/d_blog_module/category&category_id=1">Blogs</a></li>
+                        <li><a href="">FAQs</a></li>
 
                      </ul>
                   </div>
@@ -162,7 +165,11 @@
    <div class="row footer-row-2">
       <ul style="list-style: none;">
 
-         <li>&copy; 2021 All right reserve, Goodwork </li>
+         <li>
+                    Copyright © 2023 Goodwork Daily. All Rights Reserved. Developed By
+                    <a href="https://theodin.in/" style="color:#fff;    text-decoration: underline;">
+                        @The Odin</a>
+                 </li>
       </ul>
    </div>
 </footer>

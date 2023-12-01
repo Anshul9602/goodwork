@@ -134,7 +134,7 @@
           </div>
         </div>
         <div class="menu-item">
-          <a href="index.php?route=information/contact">COLLECION</a>
+          <a href="index.php?route=information/contact">COLLECTION</a>
         </div>
         <div class="menu-item">
           <a href="index.php?route=information/contact">CONTACT US</a>
