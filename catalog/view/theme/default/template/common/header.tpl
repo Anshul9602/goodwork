@@ -114,20 +114,32 @@
         </div>
         <div class="menu-item dropdown">
           <a class="dropbtn" href="#">SHOP</a>
-          <div class="dropdown-content">
-            <?php foreach ($categories as $category) { ?>
+          <div class="dropdown-content "style="width: 1000px;margin-left:-200px;margin-top:5px;">
+            <div class="row " style="padding:2%;">
+              <div class="col-md-4">
+                <?php foreach ($categories as $category) { ?>
 
-              <a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
-
-            <?php  } ?>
+                  <a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+    
+                <?php  } ?>
+              </div>
+              <div class="col-md-4">
+                <img src="image/new/b1.jpg" alt="" width="100%">
+              </div>
+              <div class="col-md-4">
+                <img src="image/new/b2.jpg" alt="" width="100%">
+              </div>
+            </div>
+           
           </div>
+        </div>
+        <div class="menu-item">
+          <a href="index.php?route=information/contact">COLLECION</a>
         </div>
         <div class="menu-item">
           <a href="index.php?route=information/contact">CONTACT US</a>
         </div>
-        <div class="menu-item">
-          <a href="index.php?route=extension/d_blog_module/category&category_id=6">BLOG</a>
-        </div>
+        
       </div>
 
       <script>

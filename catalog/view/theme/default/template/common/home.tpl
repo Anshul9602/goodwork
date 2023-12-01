@@ -2,7 +2,12 @@
 <script type="text/javascript" src="catalog/view/javascript/slick.min.js"></script>
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/slick.css" />
 <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css" />
-
+<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
 <style>
   @media only screen and (max-width: 400px) {
     #clockdiv {
@@ -52,6 +57,34 @@
     opacity: 0.75;
     color: rgb(0, 0, 0);
   }
+  /* Style the tab */
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 25px;
+  width: 100%;
+  max-width: 50%;
+  color: #000;
+}
+
+/* Change background color of buttons on hover */
+
+
+/* Create an active/current tablink class */
+.tab button.active {
+ 
+  color:#E58558;
+}
+
+/* Style the tab content */
+
 </style>
 
 
@@ -72,27 +105,104 @@
   </div>
 </section>
 
-<section id="banner-2">
+
+<section >
   <div class="container">
-    <div class="ell_container">
-      <div id="shopByCategory">
-        <div>
-          <h2>shop by categories <!----></h2>
-          <p class="f16">Explore exquisite home collection based on our ethos of six brand pillars <!----></p>
-          <div class="row">
-            <div class="col-md-2">
-<img src="" alt="" width="100%">
-<h4 style=" font-weight: 100;">TREND 2022</h4>
-            </div>
-          </div>
-        </div>
-      </div><!---->
+    
+    <div class="tab">
+      <button class="tablinks active" onclick="openCity(event, 'London')" style="border-right: 2px solid #E58558;    text-align: end;  padding-right: 5%;">New Arrival</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')"style="text-align: start;  padding-left: 5%;">Best Seller</button>
       
     </div>
+    
+    <div id="London" class="tabcontent" style="    margin-top: 7%;">
+      <div class="splide sp1" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <?php for($j=0; $j< sizeof($newcat);$j++){?>
+            <li class="splide__slide">
+            
 
+                <div class="" style="padding: 1em;">
+                  <div class="image-div" style="position: relative;">
+                    <img class="img-responsive" src="<?php echo $newcat[$j]['thumb']?>" alt="">
+                    <a class="cart-hover" href="">ADD TO CART</a>
+                  </div>
+                  
+                  <a href="<?php echo $necat[$j]['href']?>">
+                    <h4>
+                      <?php echo $newcat[$j]['name']?>
+                    </h4>
+                    <p>
+                      <?php echo $newcat[$j]['price']?>
+                    </p>
+                    <!-- <p><?php echo $products1[$j]['rating']?></p> -->
+                  </a>
+                </div>
+        
+                
+            </li>
+            <?php }?>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div id="Paris" class="tabcontent" style="display: none; margin-top: 7%;">
+      <div class="splide sp2" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <?php for($j=0; $j< sizeof($newcat);$j++){?>
+            <li class="splide__slide">
+            
+
+                <div class="" style="padding: 1em;">
+                  <div class="image-div" style="position: relative;">
+                    <img class="img-responsive" src="<?php echo $newcat[$j]['thumb']?>" alt="">
+                    <a class="cart-hover" href="">ADD TO CART</a>
+                  </div>
+                  
+                  <a href="<?php echo $necat[$j]['href']?>">
+                    <h4>
+                      <?php echo $newcat[$j]['name']?>
+                    </h4>
+                    <p>
+                      <?php echo $newcat[$j]['price']?>
+                    </p>
+                    <!-- <p><?php echo $products1[$j]['rating']?></p> -->
+                  </a>
+                </div>
+        
+                
+            </li>
+            <?php }?>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    
 
   </div>
 </section>
+
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
 <section id="banner-2">
   <div class="container">
 
@@ -102,17 +212,17 @@
           <h4 class="mb-5 cursive-font">News Collection</h4>
           <h1 style="color: #333;" class="kepler">
             THE LATEST TRENDS <br />
-            ABSTRACT COLLECTION 2021
+            ABSTRACT COLLECTION 2024
           </h1>
           <img src="image/new/b1.jpg" class="img-responsive" style="padding: 6em 137px 0px 0px;" alt="">
           <div class="collection-inner-div">
-            <h4 style=" color: #ff8429;font-weight: 100;">TREND 2022</h4>
+            <h4 style=" color: #ff8429;font-weight: 100;">TREND 2024</h4>
             <h2 style="text-transform:uppercase">Recycled paper pencils </h2>
             <button><a href="index.php?route=product/category&path=62">SHOP NOW</a></button>
           </div>
           <img src="image/new/b2.jpg" class="img-responsive" style="margin-left:65px;padding: 0em 0px 0px 60px;" alt="">
           <div class="overlay-div">
-            <h4 style="color: #ff8429;font-weight: 100;">TREND 2022</h4>
+            <h4 style="color: #ff8429;font-weight: 100;">TREND 2024</h4>
             <h2 style="padding: 0px 45px 10px 0px; text-transform:uppercase"> Ruler diary </h2>
             <button><a href="index.php?route=product/category&path=62">SHOP NOW</a></button>
           </div>
@@ -122,8 +232,8 @@
         <div class="collection-div">
           <img src="image/new/b3.jpg" class="img-responsive" style="padding: 0px 0px 0px 70px;" alt="">
           <div class="overlay-div">
-            <h4 style="color: #ff8429;font-weight: 100;">TREND 2022</h4>
-            <h2> 2022 <br />Bestsellers! </h2>
+            <h4 style="color: #ff8429;font-weight: 100;">TREND 2024</h4>
+            <h2> 2024 <br />Bestsellers! </h2>
             <button><a href="index.php?route=product/category&path=64">SHOP NOW</a></button>
           </div>
         </div>
@@ -131,7 +241,7 @@
       <div class="col-lg-6 col-md-6 col-sm-12">
         <img src="image/new/b4.jpg" class="img-responsive" style="padding: 7em 0em 0em 10em;" alt="">
         <div class="collection-last-div">
-          <h4 style="color: #ff8429;font-weight: 100;">TREND 2022</h4>
+          <h4 style="color: #ff8429;font-weight: 100;">TREND 2024</h4>
           <h1>Write & Sketch </h1>
           <button><a href="index.php?route=product/category&path=62">SHOP NOW</a></button>
         </div>
@@ -188,6 +298,48 @@
 </section>
 
 <script>
+  var splide = new Splide( '.sp1', {
+    type: 'loop',
+    perPage: 3,
+    focus: 'center',
+    autoplay: true,
+    interval: 8000,
+    flickMaxPages: 3,
+    updateOnMove: true,
+    pagination: false,
+    padding: '10%',
+    throttle: 300,
+    breakpoints: {
+      1440: {
+        perPage: 1,
+        padding: '30%'
+      }
+    }
+  } );
+  
+  splide.mount();
+
+  var splide = new Splide( '.sp2', {
+    type: 'loop',
+    perPage: 3,
+    focus: 'center',
+    autoplay: true,
+    interval: 8000,
+    flickMaxPages: 3,
+    updateOnMove: true,
+    pagination: false,
+    padding: '10%',
+    throttle: 300,
+    breakpoints: {
+      1440: {
+        perPage: 1,
+        padding: '30%'
+      }
+    }
+  } );
+  
+  splide.mount();
+
   function getTimeRemaining(endtime) {
     const total = Date.parse(endtime) - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);
