@@ -306,18 +306,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   var splide = new Splide( '.sp1', {
     type: 'loop',
     perPage: 4,
-    focus: 'center',
+   
     autoplay: true,
-    interval: 8000,
-    flickMaxPages: 4,
-    updateOnMove: true,
+    
+    
     pagination: false,
-    padding: '10%',
-    throttle: 300,
+   
     breakpoints: {
       1440: {
-        perPage: 1,
-        padding: '30%'
+        perPage: 4,
+        
       }
     }
   } );
@@ -327,18 +325,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   var splide = new Splide( '.sp2', {
     type: 'loop',
     perPage: 4,
-    focus: 'center',
+   
     autoplay: true,
-    interval: 8000,
-    flickMaxPages: 4,
-    updateOnMove: true,
+    
+    
     pagination: false,
-    padding: '10%',
-    throttle: 300,
+   
     breakpoints: {
       1440: {
-        perPage: 1,
-        padding: '30%'
+        perPage: 4,
+        
       }
     }
   } );
@@ -402,7 +398,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       <div class="col-md-12 row">
         <?php for($j=0; $j< sizeof($products1);$j++){?>
 
-        <div class="col-md-3" style="padding: 1em;">
+        <div class="col-md-3" style="padding: 3em;">
           <div class="image-div" style="position: relative;">
             <a href="<?php echo $products1[$j]['href']?>"><img class="img-responsive" src="<?php echo $products1[$j]['thumb']?>" alt=""></a>
             <a class="cart-hover" href="">ADD TO CART</a>
@@ -433,7 +429,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <div class="stay-div">
           <img src="catalog/view/theme/default/image/goodwork_home/stay.png" alt="Stay">
           <div class="stay-text-div">
-            <h2>Stay in the know !</h2>
+            <h2>Stay updated !</h2>
             <p>Be the first to know about New Arrivals, Look Books, Sales & Promos!</p>
           </div>
         </div>

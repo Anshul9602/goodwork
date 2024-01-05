@@ -116,7 +116,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <h1 style="font-size:70px;font-weight: 300;">About Us</h1>
       </div>
       <div class="col-md-6" style="text-align: end;">
-        <h4>Goodwork was founded in 2010 as a small design & printing company in Jaipur. With hard work and dedication from our dynamic team, we grew into one of the leading brands of its kind in just a few short years.
+        <h4 style="font-weight: 300;">Goodwork was founded in 2010 as a small design & printing company in Jaipur. With hard work and dedication from our dynamic team, we grew into one of the leading brands of its kind in just a few short years.
 High end quality of products, timely deliveries and long lasting relationships with our customers are our pillars of strength. 
 </h4>
         <h4 class=" rebtn"style="text-align: end;color:#cd9748;margin-top:20px;">Read more</h4>
@@ -133,8 +133,8 @@ High end quality of products, timely deliveries and long lasting relationships w
        <img src="image/new/ib/2.png" alt="" width="80%" style="margin: auto;">
       </div>
       <div class="col-md-6"style="text-align: center;">
-        <div style="text-align: center; margin:10px 10px 20px;"><button class="button btn vibtn" style="background:#434142;color:#fff;font-size: 25px;border-radius: 50% !important;padding: 14px 18px;">VIEW<br> SHOP</button></div>
-        <h4 style="margin: 20px 0;padding-top:20px;">Goodwork Daily is an outcome of the continued motivation & fondness we gathered for our designs from customers worldwide. We also felt the need of bringing in the market, the best of all worlds, when it came to products used in our daily life.
+        <div style="text-align: center; margin:10px 10px 20px;"><a href="index.php?route=product/category&path=59"><button class="button btn vibtn" style="background:#434142;color:#fff;font-size: 25px;border-radius: 50% !important;padding: 14px 18px;">VIEW<br> SHOP</button></a></div>
+        <h4 style="margin: 20px 0;padding-top:20px;font-weight: 300;">Goodwork Daily is an outcome of the continued motivation & fondness we gathered for our designs from customers worldwide. We also felt the need of bringing in the market, the best of all worlds, when it came to products used in our daily life.
 Our Goodwork daily range is one of its kind and we make sure we keep launching new products to meet everyone's day to day needs in a package of contemporary designs blended with purposeful utility.
 </h4>
         

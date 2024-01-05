@@ -2238,3 +2238,7 @@
 2023-12-14 18:04:37 - PHP Warning:  Undefined array key "best" in C:\xampp\htdocs\good\catalog\controller\common\home.php on line 231
 2024-01-05 11:53:06 - PHP Warning:  Undefined array key "new" in C:\xampp\htdocs\good\catalog\controller\common\home.php on line 230
 2024-01-05 11:53:06 - PHP Warning:  Undefined array key "best" in C:\xampp\htdocs\good\catalog\controller\common\home.php on line 231
+2024-01-05 12:43:02 - PHP Warning:  Undefined array key "best" in C:\xampp\htdocs\good\catalog\controller\common\about.php on line 212
+2024-01-05 12:43:32 - PHP Warning:  Undefined array key "best" in C:\xampp\htdocs\good\catalog\controller\common\about.php on line 212
+2024-01-05 12:56:41 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\good\system\library\mail.php on line 158
+2024-01-05 12:56:43 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\good\system\library\mail.php on line 158
