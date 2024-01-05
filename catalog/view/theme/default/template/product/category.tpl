@@ -14,9 +14,12 @@
    .product-thumb .image img{
       width:100%;
    }
-
+   .product-thumb .caption {
+   padding: 0 5px; 
+      min-height: 80px;
+  }
      .caption{
-      margin-top:15px;
+      margin-top:0px;
       text-align:center;
    }
    @media screen and (max-width:650px){
@@ -107,31 +110,10 @@
                        
                         
                         <div class="caption" style="text-align:left;">
-                           <h3 style="text-transform:uppercase; font-size:14px; margin-top:-4px"><?php echo $product['name']; ?></h3>
-
-                           <?php if (1) { ?>
-                              <div class="rating">
-                              <p>
-                                 <?php for ($i = 1; $i <= 5; $i++) { ?>
-                                 <?php if ($product['rating'] < $i) { ?>
-                                 <span class="fa fa-stack"
-                                    ><i class="fa fa-star-o fa-stack-1x"></i
-                                 ></span>
-                                 <?php } else { ?>
-                                 <span class="fa fa-stack"
-                                    ><i class="fa fa-star fa-stack-1x"></i
-                                    ><i class="fa fa-star-o fa-stack-1x"></i
-                                 ></span>
-                                 <?php } ?>
-                                 <?php } ?>
-                                 
-                              </p>
-                              </div>
-                           <?php } ?>
-
+                           <h3 style="text-transform:uppercase; font-size:16px; margin-top:-25px"><?php echo $product['name']; ?></h3>
 
                            <?php if ($product['price']) { ?>
-                           <p style="margin-top:-4px; font-size:14px; font-weight:bold;" class="price">
+                           <p style="margin-top:-5px; font-size:16px; font-weight:bold;" class="price">
                               <?php if (!$product['special']) { ?>
                               <?php echo preg_replace('~\.0+$~','',$product['price']); ?>
                               <?php } else { ?>
@@ -146,7 +128,7 @@
                <?php } ?>
             </div>
             <div style="padding-right:30px" class="row">
-               <div class="col-sm-12 text-right"><?php echo $pagination; ?></div>
+               <div class="col-sm-12 text-right" style="padding-bottom: 20px;"><?php echo $pagination; ?></div>
             </div>
             <?php if (!$categories && !$products) { ?>
             <p><?php echo $text_empty; ?></p>

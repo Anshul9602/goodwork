@@ -14,8 +14,8 @@
           <br />
           <h5> <i class="fa fa-map-marker"></i>&nbsp;&nbsp;  D-4 Malviya Marg, C-Scheme 
             Opposite westside store, Jaipur 302002</h5><br />
-          <h5><i class="fa fa-phone"></i> &nbsp;&nbsp;+91 97999 99204</h5><br />
-          <h5><i class="fa fa-envelope"></i> &nbsp;&nbsp;info@goodworkdaily.com</h5>
+          <a href="tel:+919799999204"><h5><i class="fa fa-phone"></i> &nbsp;&nbsp;+91 97999 99204</h5></a><br />
+          <a href="mailto:info@goodworkdaily.com"><h5><i class="fa fa-envelope"></i> &nbsp;&nbsp;info@goodworkdaily.com</h5></a>
 
         </div>
         <div class="col-sm-8">
@@ -44,7 +44,7 @@
                 <label style="text-align: left;" class="col-sm-12 control-label" for="input-enquiry">
                   <?php echo $entry_enquiry; ?></label>
                 <div class="col-sm-12">
-                  <textarea name="enquiry" rows="10" id="input-enquiry" class="form-control"><?php echo $enquiry; ?></textarea>
+                  <textarea name="enquiry" rows="3" id="input-enquiry" class="form-control"><?php echo $enquiry; ?></textarea>
                   <?php if ($error_enquiry) { ?>
                     <div class="text-danger"><?php echo $error_enquiry; ?></div>
                   <?php } ?>

@@ -85,7 +85,12 @@
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           z-index: 1;
         }
-
+.sticky-header #navigation .menu-item {
+    display: inline-block;
+    margin-bottom: 0px;
+    text-align: left;
+    margin: 10px 25px;
+}
         .dropdown-content a {
           color: black;
           padding: 12px 16px;
@@ -104,17 +109,27 @@
         .dropdown:hover .dropbtn {
           color: red;
         }
+        #navigation{
+          text-align: center;
+        }
+        .sticky-header #navigation a, #top_right a {
+    color: #333;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    text-decoration: none !important;
+    transition-duration: 100ms;
+    -webkit-transition-duration: 600ms;
+    font-weight: lighter;
+}
       </style>
       <div id="navigation" class="col-sm-6">
-        <div class="menu-item">
-          <a href="index.php?route=common/home">HOME</a>
-        </div>
+        
         <div class="menu-item">
           <a href="index.php?route=common/about">ABOUT</a>
         </div>
         <div class="menu-item dropdown">
           <a class="dropbtn" href="#">SHOP</a>
-          <div class="dropdown-content "style="width: 1000px;margin-left:-200px;margin-top:5px;">
+          <div class="dropdown-content "style="width: 1000px;margin-left:-350px;padding:30px;">
             <div class="row " style="padding:2%;">
               <div class="col-md-4">
                 <?php foreach ($categories as $category) { ?>
@@ -135,14 +150,14 @@
         </div>
         <div class="menu-item dropdown">
           <a class="dropbtn" href="#">COLLECTION</a>
-          <div class="dropdown-content "style="width: 1000px;margin-left:-250px;margin-top:5px;">
+          <div class="dropdown-content "style="width: 1000px;margin-left:-350px;padding:30px;">
             <div class="row " style="padding:2%;">
               <div class="col-md-4">
                 
-                  <a href="">RECYCLED PAPER PENCILS</a>
-                  <a href="">RULER DIARY</a>
-                  <a href="">WRITE & SKETCH</a>
-                  <a href="">BESTSELLERS</a>
+                  <a href="index.php?route=product/category&path=64">RECYCLED PAPER PENCILS</a>
+                  <a href="index.php?route=product/category&path=59">RULER DIARY</a>
+                  <a href="index.php?route=product/category&path=63">WRITE & SKETCH</a>
+                  <a href="index.php?route=product/category&path=64">BESTSELLERS</a>
               </div>
               <div class="col-md-4">
                 <img src="image/new/b1.jpg" alt="" width="100%">
@@ -191,6 +206,15 @@
               </svg>
             </a>
           </div>
+          <div class="menu-item" style="    align-items: center;
+          display: flex;
+          padding:0 8px;">
+            <a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>" style="align-items: center;
+              display: flex;
+              color: black;">
+              <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 22px;"></i>
+          </a>
+          </div>
           <div class="menu-item cart_icon">
             <a style="color: #666" href="index.php?route=checkout/cart">
               <svg width="100%" height="100%" viewBox="0 0 1400 1400" data-icon="cart">
@@ -200,9 +224,12 @@
               <span id="cart_text1"><?php echo $text_items; ?></span>
             </a>
           </div>
+         
           <div class="cart_icon">
             <?php echo $cart; ?>
           </div>
+          
+          
         </div>
       </div>
     </div>

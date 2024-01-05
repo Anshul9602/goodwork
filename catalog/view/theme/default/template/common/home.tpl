@@ -9,6 +9,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
 <style>
+  #catt .row {
+    display: flex; /* Use flexbox to create a flexible container */
+    flex-wrap: wrap; /* Allow the content to wrap to the next line if it exceeds the container width */
+    margin: -15px; /* Add negative margin to counteract the padding on the columns (adjust as needed) */
+  }
   @media only screen and (max-width: 400px) {
     #clockdiv {
       font-size: 15px;
@@ -46,15 +51,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     color: transparent;
     border: none;
     outline: none;
-    background: white;
+  
   }
 
   .slick-prev:before,
   .slick-next:before {
     font-family: system-ui;
-    font-size: 23px;
+    font-size: 45px;
     line-height: 1;
-    opacity: 0.75;
+    opacity: 1;
     color: rgb(0, 0, 0);
   }
   /* Style the tab */
@@ -300,11 +305,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 <script>
   var splide = new Splide( '.sp1', {
     type: 'loop',
-    perPage: 3,
+    perPage: 4,
     focus: 'center',
     autoplay: true,
     interval: 8000,
-    flickMaxPages: 3,
+    flickMaxPages: 4,
     updateOnMove: true,
     pagination: false,
     padding: '10%',
@@ -321,11 +326,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
   var splide = new Splide( '.sp2', {
     type: 'loop',
-    perPage: 3,
+    perPage: 4,
     focus: 'center',
     autoplay: true,
     interval: 8000,
-    flickMaxPages: 3,
+    flickMaxPages: 4,
     updateOnMove: true,
     pagination: false,
     padding: '10%',
@@ -384,7 +389,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   initializeClock('clockdiv', deadline);
 </script>
 
-<section id="banner-2">
+<section id="catt">
   <div class="container">
 
     <div class="row">
@@ -394,22 +399,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           NEW SUMMER COLLECTION
         </h1>
       </div>
-      <div class=" col-lg-12 col-md-12 col-sm-12">
+      <div class="col-md-12 row">
         <?php for($j=0; $j< sizeof($products1);$j++){?>
 
-        <div class="col-lg-3 col-md-6 col-sm-12" style="padding: 1em;">
+        <div class="col-md-3" style="padding: 1em;">
           <div class="image-div" style="position: relative;">
             <a href="<?php echo $products1[$j]['href']?>"><img class="img-responsive" src="<?php echo $products1[$j]['thumb']?>" alt=""></a>
             <a class="cart-hover" href="">ADD TO CART</a>
           </div>
-          <?php for ($i = 1; $i <= 5; $i++) { ?>
-          <?php if ($products1[$j]['rating'] < $i) { ?>
-          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-          <?php } else { ?>
-          <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i
-              class="fa fa-star-o fa-stack-1x"></i></span>
-          <?php } ?>
-          <?php } ?>
+          
           <a href="<?php echo $products1[$j]['href']?>">
             <h4>
               <?php echo $products1[$j]['name']?>
@@ -417,7 +415,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <p>
               <?php echo $products1[$j]['price']?>
             </p>
-            <!-- <p><?php echo $products1[$j]['rating']?></p> -->
+            
           </a>
         </div>
 
@@ -428,7 +426,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   </div>
 </section>
 
-<section style="padding-top: 0px;">
+<section style="padding-top: 20px;">
   <div class="container" style="background: #f8f8f8;">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12">

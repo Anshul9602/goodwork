@@ -68,10 +68,11 @@
       <div class="row">
          <div class="col-lg-4 col-md-4 col-sm-12">
             <div class="footer-div-1">
-               <h6 style="color: white;"> <i class="fa fa-map-marker"></i>&nbsp;&nbsp;  D-4 Malviya Marg, C-Scheme 
-Opposite westside store, Jaipur 302002</h6>
-               <h6 style="color: white;"><i class="fa fa-phone"></i> &nbsp;&nbsp;+91 97999 99204</h6>
-               <h6 style="color: white;"><i class="fa fa-envelope"></i> &nbsp;&nbsp;info@goodworkdaily.com</h6>
+               <a href="https://maps.app.goo.gl/k9beFr9Dr5x6ntLC6"><h6 style="color: white;"> <i class="fa fa-map-marker"></i>&nbsp;&nbsp;  D-4 Malviya Marg, C-Scheme 
+Opposite westside store, Jaipur 302002</h6></a>
+               <a href="tel:+919799999204" ><h6 style="color: white;"><i class="fa fa-phone"></i> &nbsp;&nbsp;+91 97999 99204</h6>
+               </a>
+               <a href="mailto:info@goodworkdaily.com" ><h6 style="color: white;"><i class="fa fa-envelope"></i> &nbsp;&nbsp;info@goodworkdaily.com</h6>
             </div>
          </div>
 
@@ -93,11 +94,11 @@ Opposite westside store, Jaipur 302002</h6>
                <div class="col-lg-6 col-md-6 col-sm-12">
                   <div class="footer-div-3-1">
                      <ul>
-                        <li><a href="">About Us</a></li>
+                        <li><a href="index.php?route=common/about">About Us</a></li>
 
-                        <li><a href="">Shop</a></li>
-                        <li><a href="">Collection</a></li>
-                        <li><a href="">Contact Us</a></li>
+                        <li><a href="index.php?route=product/category&path=64">Shop</a></li>
+                        <li><a href="index.php?route=product/category&path=64">Collection</a></li>
+                        <li><a href="index.php?route=information/contact">Contact Us</a></li>
                         
                      </ul>
                   </div>
@@ -105,9 +106,9 @@ Opposite westside store, Jaipur 302002</h6>
                <div class="col-lg-6 col-md-6 col-sm-12">
                   <div class="footer-div-3-2">
                      <ul>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Returns</a></li>
-                        <li><a href="">FAQs</a></li>
+                        <li><a href="index.php?route=information/information&information_id=3">Privacy Policy</a></li>
+                        <li><a href="index.php?route=information/information&information_id=6">Returns</a></li>
+                        <li><a href="index.php?route=information/information&information_id=5">FAQs</a></li>
 
                      </ul>
                   </div>

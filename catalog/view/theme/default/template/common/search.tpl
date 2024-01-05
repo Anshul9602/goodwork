@@ -1,15 +1,16 @@
 <style>
 #overlay_search {
-    padding: 10px;
+  border: 1px solid;
+  border-radius: 30px;
     position: absolute;
-    right: 5%;
+    right: 50%;
     display: none;
     background-color: #fff;
     justify-content: center;
     align-items: center;
     z-index: 9999999;
-    margin-top: 36px;
-    width: 260px;
+    margin-top: 5px;
+    width: 300px;
 }
 #search_top {
     border: none;
@@ -34,13 +35,13 @@
     </button>
   </span>
 
-  <div id="overlay_search">
-    <input type="text" name="search" value="<?php echo $search; ?>" placeholder="Search" id="search_top" class="form-control input-lg" />
-    <li class="fa fa-search search_icon_top"></li>
-  </div>
+  
 
 </div>
-
+<div id="overlay_search"><div class="ma" style="display: flex;width: 100%;justify-content: space-around;padding: 5px;align-items: center;">
+    <input type="text" name="search" value="<?php echo $search; ?>" placeholder="Search" id="search_top" class="form-control input-lg" />
+    <li class="fa fa-search search_icon_top" style="    cursor: pointer;"></li></div>
+  </div>
 <script>
     $("#search").click(function (e) {
       e.preventDefault();
