@@ -156,19 +156,19 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   <div class="row">
     <div class="col-md-6" style="min-height: 100vh;background-color: #f6ebf1;align-items: center;display: flex;">
       <div class="row" style="height:65%;width:100%;">
-        <div class="col-md-6 p-5 text-center">
+        <div class="col-md-6 col-6 p-5 text-center">
           <img src="image/new/b1.jpg" alt="" style="width: 200px;">
           <h3 style="    letter-spacing: 1.2px;">ENVELOPES</h3>
         </div>
-        <div class="col-md-6 p-5 text-center">
+        <div class="col-md-6 col-6 p-5 text-center">
           <img src="image/new/b1.jpg" alt=""style="width: 200px;">
           <h3 style="    letter-spacing: 1.2px;">TRAYS</h3>
         </div>
-        <div class="col-md-6 p-5 text-center " style="padding-top: 35px;">
+        <div class="col-md-6 col-6 p-5 text-center " style="padding-top: 35px;">
           <img src="image/new/b1.jpg" alt=""style="width: 200px;">
           <h3 style="    letter-spacing: 1.2px;">HAMPER</h3>
         </div>
-        <div class="col-md-6 p-5 text-center pt-4"style="padding-top: 35px;">
+        <div class="col-md-6 col-6 p-5 text-center pt-4"style="padding-top: 35px;">
           <img src="image/new/b1.jpg" alt=""style="width: 200px;">
           <h3 style="    letter-spacing: 1.2px;">WRAPPING SHEETS</h3>
         </div>
