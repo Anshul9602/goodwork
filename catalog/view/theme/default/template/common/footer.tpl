@@ -167,7 +167,7 @@ Opposite westside store, Jaipur 302002</h6></a>
       <ul style="list-style: none;">
 
          <li>
-                    Copyright © 2023 Goodwork Daily. All Rights Reserved. Developed By
+                    Copyright © 2024 Goodwork Daily. All Rights Reserved. Developed By
                     <a href="https://theodin.in/" style="color:#fff;    text-decoration: underline;">
                         @The Odin</a>
                  </li>

@@ -116,52 +116,100 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <h1 style="font-size:70px;font-weight: 300;">About Us</h1>
       </div>
       <div class="col-md-6" style="text-align: end;">
-        <h4 style="font-weight: 300;">Goodwork was founded in 2010 as a small design & printing company in Jaipur. With hard work and dedication from our dynamic team, we grew into one of the leading brands of its kind in just a few short years.
-High end quality of products, timely deliveries and long lasting relationships with our customers are our pillars of strength. 
-</h4>
-        <h4 class=" rebtn"style="text-align: end;color:#cd9748;margin-top:20px;">Read more</h4>
+        <h4 style="font-weight: 300;">Goodwork was founded in 2010 as a small design & printing company in Jaipur. With
+          hard work and dedication from our dynamic team, we grew into one of the leading brands of its kind in just a
+          few short years.
+          High end quality of products, timely deliveries and long lasting relationships with our customers are our
+          pillars of strength.
+        </h4>
+
       </div>
     </div>
   </div>
 </section>
 <section>
   <div class="container">
-    <div class="row"style="    
+    <div class="row" style="    
     display: flex;
     align-items: center;">
       <div class="col-md-6">
-       <img src="image/new/ib/2.png" alt="" width="80%" style="margin: auto;">
+        <img src="image/new/ib/2.png" alt="" width="80%" style="margin: auto;">
       </div>
-      <div class="col-md-6"style="text-align: center;">
-        <div style="text-align: center; margin:10px 10px 20px;"><a href="index.php?route=product/category&path=59"><button class="button btn vibtn" style="background:#434142;color:#fff;font-size: 25px;border-radius: 50% !important;padding: 14px 18px;">VIEW<br> SHOP</button></a></div>
-        <h4 style="margin: 20px 0;padding-top:20px;font-weight: 300;">Goodwork Daily is an outcome of the continued motivation & fondness we gathered for our designs from customers worldwide. We also felt the need of bringing in the market, the best of all worlds, when it came to products used in our daily life.
-Our Goodwork daily range is one of its kind and we make sure we keep launching new products to meet everyone's day to day needs in a package of contemporary designs blended with purposeful utility.
-</h4>
-        
+      <div class="col-md-6" style="text-align: center;">
+        <div style="text-align: center; margin:10px 10px 20px;"><a
+            href="index.php?route=product/category&path=59"><button class="button btn vibtn"
+              style="background:#434142;color:#fff;font-size: 25px;border-radius: 50% !important;padding: 14px 18px;">VIEW<br>
+              SHOP</button></a></div>
+        <h4 style="margin: 20px 0;padding-top:20px;font-weight: 300;">Goodwork Daily is an outcome of the continued
+          motivation & fondness we gathered for our designs from customers worldwide. We also felt the need of bringing
+          in the market, the best of all worlds, when it came to products used in our daily life.
+          Our Goodwork daily range is one of its kind and we make sure we keep launching new products to meet everyone's
+          day to day needs in a package of contemporary designs blended with purposeful utility.
+        </h4>
+
       </div>
     </div>
   </div>
 </section>
 <section>
-  <img src="image/new/ib/an1.png" alt="" width="100%">
+
+  <div class="row">
+    <div class="col-md-6" style="min-height: 100vh;background-color: #f6ebf1;align-items: center;display: flex;">
+      <div class="row" style="height:65%;width:100%;">
+        <div class="col-md-6 p-5 text-center">
+          <img src="image/new/b1.jpg" alt="" style="width: 200px;">
+          <h3 style="    letter-spacing: 1.2px;">ENVELOPES</h3>
+        </div>
+        <div class="col-md-6 p-5 text-center">
+          <img src="image/new/b1.jpg" alt=""style="width: 200px;">
+          <h3 style="    letter-spacing: 1.2px;">TRAYS</h3>
+        </div>
+        <div class="col-md-6 p-5 text-center " style="padding-top: 35px;">
+          <img src="image/new/b1.jpg" alt=""style="width: 200px;">
+          <h3 style="    letter-spacing: 1.2px;">HAMPER</h3>
+        </div>
+        <div class="col-md-6 p-5 text-center pt-4"style="padding-top: 35px;">
+          <img src="image/new/b1.jpg" alt=""style="width: 200px;">
+          <h3 style="    letter-spacing: 1.2px;">WRAPPING SHEETS</h3>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="col-md-6"
+      style="background: linear-gradient(to right, #f6ebf1 50%, #fff 50%);min-height:100vh;align-items: center;display: flex;">
+      <div class="video" style="margin:auto;">
+
+        <video id="myVideo" width="100%" muted autoplay loop preload="auto">
+          <source src="image/new/clip.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    </div>
+  </div>
+  
 </section>
 <section>
   <div class="container">
     <div class="row" style="align-items: center; display:flex;">
       <div class="col-md-4">
-       <img src="image/new/ib/3.jpg" alt="" width="100%" style="    border-radius: 46% 46% 0 0;">
+        <img src="image/new/ib/3.jpg" alt="" width="100%" style="    border-radius: 46% 46% 0 0;">
       </div>
       <div class="col-md-4 " style="padding-top: 20%;">
-       <img src="image/new/ib/4.jpg" alt="" width="100%">
+        <img src="image/new/ib/4.jpg" alt="" width="100%">
       </div>
       <div class="col-md-4">
-        <h1 class="fonth"style="font-size: 70px;padding-bottom:20px;    text-align: center;font-weight: 300;">EXPLORE</h1>
+        <h1 class="fonth" style="font-size: 70px;padding-bottom:20px;    text-align: center;font-weight: 300;">EXPLORE
+        </h1>
         <h1 style="padding-bottom: 10px;color:#000;    text-align: center;">Home Lists</h1>
-       <div style="    text-align: center;">
-        <button class="button btn exbtn" style="margin:auto;background:#434142;color:#fff;font-size: 20px;border-radius: 50% !important;padding: 20px 10px;">EXPLORE <br>HERE</button>
-       
-       </div> 
-        
+        <div style="    text-align: center;">
+          <a href="index.php?route=product/category&path=64"><button class="button btn exbtn"
+              style="margin:auto;background:#434142;color:#fff;font-size: 20px;border-radius: 50% !important;padding: 20px 10px;">EXPLORE
+              <br>HERE</button></a>
+
+        </div>
+
       </div>
     </div>
   </div>
@@ -171,31 +219,32 @@ Our Goodwork daily range is one of its kind and we make sure we keep launching n
     <div class="" style="max-width: 90%; margin:auto;">
       <h1 style="padding-bottom: 20px;">Shop by Category</h1>
     </div>
-   
+
     <div class="splide sp1" role="group" aria-label="Splide Basic HTML Example">
       <div class="splide__track">
         <ul class="splide__list">
           <?php for($j=0; $j< sizeof($bestcat);$j++){?>
           <li class="splide__slide">
-          
 
-              <div class="" style="padding: 1em 0;    text-align: center;">
-                <div class="image-div" style="position: relative;">
-                  <a href="<?php echo $bestcat[$j]['href']?>"><img class="img-responsive" src="<?php echo $bestcat[$j]['thumb']?>" alt=""></a>
-                 
-                </div>
-                
-                <a href="<?php echo $bestcat[$j]['href']?>" style="display: flex;justify-content: center;
-                  margin-top: -20px;z-index: 999;position: relative;">
-                  <button style="background-color: #fff;padding:10px 20px;color:black;border: 1px solid gray;">
-                    <?php echo $bestcat[$j]['name']?>
-                  </button>
-                  
-                  <!-- <p><?php echo $products1[$j]['rating']?></p> -->
-                </a>
+
+            <div class="" style="padding: 1em 0;    text-align: center;">
+              <div class="image-div" style="position: relative;">
+                <a href="<?php echo $bestcat[$j]['href']?>"><img class="img-responsive"
+                    src="<?php echo $bestcat[$j]['thumb']?>" alt=""></a>
+
               </div>
-      
-              
+
+              <a href="<?php echo $bestcat[$j]['href']?>" style="display: flex;justify-content: center;
+                  margin-top: -20px;z-index: 999;position: relative;">
+                <button style="background-color: #fff;padding:10px 20px;color:black;border: 1px solid gray;">
+                  <?php echo $bestcat[$j]['name']?>
+                </button>
+
+                <!-- <p><?php echo $products1[$j]['rating']?></p> -->
+              </a>
+            </div>
+
+
           </li>
           <?php }?>
         </ul>
@@ -219,7 +268,7 @@ Our Goodwork daily range is one of its kind and we make sure we keep launching n
       }
     }
   });
-  
+
   splide.mount();
 
   function getTimeRemaining(endtime) {
@@ -288,8 +337,20 @@ Our Goodwork daily range is one of its kind and we make sure we keep launching n
     autoplaySpeed: 4000,
   });
 
-  
 
- 
+
+
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var video = document.getElementById('myVideo');
+
+    // Play the video
+    video.play();
+
+    // Mute the video
+    video.muted = true;
+  });
+</script>
+
 <?php echo $footer; ?>

@@ -221,10 +221,7 @@
             <?php echo $reward; ?>
           </li>
           <?php } ?>
-          <li>
-            <?php echo $text_stock; ?>
-            <?php echo $stock; ?>
-          </li>
+          
         </ul>
         <?php if ($price) { ?>
         <ul style="padding-left: 15px;" class="list-unstyled">

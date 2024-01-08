@@ -19,7 +19,7 @@
       <?php if ($products) { ?>
        <div style="padding:30px;" class="row">
         <?php foreach ($products as $product) { ?>
-        <div style="margin-bottom:20px" class="product-layout product-list col-sm-4">
+        <div style="margin-bottom:20px" class="product-layout product-list col-md-2">
           <div class="row">
             <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
             </div><br />
