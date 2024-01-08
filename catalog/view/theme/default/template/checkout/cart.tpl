@@ -355,7 +355,7 @@
                   </td>
                 </tr>
                 <?php }else{ ?>
-                <tr style="border:none">
+                <tr style="border:none;">
                   <td style="border:none; text-transform:uppercase" class="text-center"><strong>
                       <?php echo $totals[$i]['title']; ?>:
                     </strong></td>
