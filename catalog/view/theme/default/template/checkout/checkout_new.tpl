@@ -166,7 +166,10 @@
           <textarea style="display:none" name="comment"></textarea>
           <div style="display:none" class="row">
             <div class="col-sm-12">
-              <?php if ($shipping_methods) { ?>
+              <?php if ($shipping_methods) 
+              
+          
+              { ?>
               <?php foreach ($shipping_methods as $shipping_method) { ?>
               <p>Shipping Charges</p>
               <?php if (!$shipping_method['error']) { ?>
