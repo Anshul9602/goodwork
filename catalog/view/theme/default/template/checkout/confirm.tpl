@@ -101,7 +101,7 @@
 
 
 <?php } else { ?>
-<script type="text/javascript"><!-
-location = '<?php echo $redirect; ?>';
-//--></script>
+<script type="text/javascript">
+  location = '<?php echo $redirect; ?>';
+</script>
 <?php } ?>
