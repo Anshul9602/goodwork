@@ -563,11 +563,18 @@
   $(".slider-nav1").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-
     dots: false,
     arrows: true,
     centerMode: false,
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 768, // Define breakpoint for mobile screens
+        settings: {
+          slidesToShow: 2, // Show 2 slides on mobile screens
+        }
+      }
+    ]
   });
   if ($(".slick-track li").length < 7) {
     $(".slick-dots").css("display", "none");
