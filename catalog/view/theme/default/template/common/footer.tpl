@@ -24,7 +24,7 @@
    }
 
    @media screen and (max-width:550px) {
-      #desktop_footer {
+      #deskf {
          display: none !important
       }
    }
@@ -65,14 +65,18 @@
 
 <footer id="footer" style="background: #060606;">
    <div class="container">
-      <div class="row">
+      <div class="row" id="deskf">
          <div class="col-lg-4 col-md-4 col-sm-12">
             <div class="footer-div-1">
-               <a href="https://maps.app.goo.gl/k9beFr9Dr5x6ntLC6"><h6 style="color: white;"> <i class="fa fa-map-marker"></i>&nbsp;&nbsp;  D-4 Malviya Marg, C-Scheme 
-Opposite westside store, Jaipur 302002</h6></a>
-               <a href="tel:+919799999204" ><h6 style="color: white;"><i class="fa fa-phone"></i> &nbsp;&nbsp;+91 97999 99204</h6>
+               <a href="https://maps.app.goo.gl/k9beFr9Dr5x6ntLC6">
+                  <h6 style="color: white;"> <i class="fa fa-map-marker"></i>&nbsp;&nbsp; D-4 Malviya Marg, C-Scheme
+                     Opposite westside store, Jaipur 302002</h6>
                </a>
-               <a href="mailto:info@goodworkdaily.com" ><h6 style="color: white;"><i class="fa fa-envelope"></i> &nbsp;&nbsp;info@goodworkdaily.com</h6>
+               <a href="tel:+919799999204">
+                  <h6 style="color: white;"><i class="fa fa-phone"></i> &nbsp;&nbsp;+91 97999 99204</h6>
+               </a>
+               <a href="mailto:info@goodworkdaily.com">
+                  <h6 style="color: white;"><i class="fa fa-envelope"></i> &nbsp;&nbsp;info@goodworkdaily.com</h6>
             </div>
          </div>
 
@@ -82,9 +86,12 @@ Opposite westside store, Jaipur 302002</h6></a>
                   <img style="width: 150px; margin: auto" src="image/logo-white.png" class="main_logo" />
                </a>
                <div class="social-links">
-                  <a target="_blank" href="https://www.facebook.com/goodworkassociates/"><img src="image/icons/fb_icon.png" width="40"></a>&nbsp;&nbsp;
-                  <a target="_blank" href="https://www.instagram.com/goodworkdesignsindia/"><img src="image/icons/insta_icon.png" width="55"></a>&nbsp;&nbsp;
-                  <a target="_blank" href="https://in.pinterest.com/goodworkindia/"><img src="image/icons/pinterest.png" width="35"></a>&nbsp;&nbsp;
+                  <a target="_blank" href="https://www.facebook.com/goodworkassociates/"><img
+                        src="image/icons/fb_icon.png" width="40"></a>&nbsp;&nbsp;
+                  <a target="_blank" href="https://www.instagram.com/goodworkdesignsindia/"><img
+                        src="image/icons/insta_icon.png" width="55"></a>&nbsp;&nbsp;
+                  <a target="_blank" href="https://in.pinterest.com/goodworkindia/"><img src="image/icons/pinterest.png"
+                        width="35"></a>&nbsp;&nbsp;
                </div>
             </div>
          </div>
@@ -99,7 +106,7 @@ Opposite westside store, Jaipur 302002</h6></a>
                         <li><a href="index.php?route=product/category&path=64">Shop</a></li>
                         <li><a href="index.php?route=product/category&path=64">Collection</a></li>
                         <li><a href="index.php?route=information/contact">Contact Us</a></li>
-                        
+
                      </ul>
                   </div>
                </div>
@@ -117,43 +124,59 @@ Opposite westside store, Jaipur 302002</h6></a>
          </div>
       </div>
       <div id="mobile_footer" class="row">
-         <div class="row">
-            <div style="text-align:left;" id="subs_mes" class="col-xs-10 col-xs-offset-1">
-               <div id="cont">
-                  <h4 style="text-align:center">Subscribe</h4>
-                  <input id="mail_boxj" style="width:100%; margin-top:15px; height:35px; padding:5px; outline:none" placeholder="Email" class="form-control" type="text">
-                  <br />
-                  <div class="col-sm-10 col-sm-offset-1">
-                     <button id="join_us" style="width: 100%; font-size:13px; background-color:#fff !important" class="btn btn-primary">JOIN US</button>
-                  </div>
-               </div>
+         <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="text-center "style="margin-top: 30px;">
+               <a href="index.php?route=common/home">
+                  <img style="width: 130px; margin: auto" src="image/logo-white.png" class="main_logo" />
+               </a>
+            
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="text-center " style="margin-top: 20px;">
+               <a href="https://maps.app.goo.gl/k9beFr9Dr5x6ntLC6">
+                  <p style="color: white;"> <i class="fa fa-map-marker"></i>&nbsp;&nbsp; D-4 Malviya Marg, C-Scheme
+                     Opposite westside store, Jaipur 302002</p>
+               </a>
+               <a href="tel:+919799999204">
+                  <p style="color: white;"><i class="fa fa-phone"></i> &nbsp;&nbsp;+91 97999 99204</p>
+               </a>
+               <a href="mailto:info@goodworkdaily.com">
+                  <p style="color: white;"><i class="fa fa-envelope"></i> &nbsp;&nbsp;info@goodworkdaily.com</p>
             </div>
          </div>
          <br />
+         <hr>
          <div class="row">
             <div style="padding:0px; padding-left:10px; text-align:left" class="col-xs-5 col-xs-offset-1">
-               <h5 style="text-transform:uppercase">GET HELP</h5>
-               <p><a href="index.php?route=common/shipping">Shipping</a>
-                  <br /><a href="index.php?route=common/exchange">Exchange Policy</a>
-                  <br /><a href="index.php?route=common/track">Track Your Order</a>
-                  <br /><a href="index.php?route=common/faqs">FAQs</a>
-               </p>
+               <ul>
+                  <li><a href="index.php?route=common/about">About Us</a></li>
+
+                  <li><a href="index.php?route=product/category&path=64">Shop</a></li>
+                  <li><a href="index.php?route=product/category&path=64">Collection</a></li>
+                  <li><a href="index.php?route=information/contact">Contact Us</a></li>
+
+               </ul>
             </div>
             <div class="col-xs-1"></div>
             <div style="padding:0px; padding-left:10px; text-align:left" class="col-xs-5">
-               <h5>ALL ABOUT US</h5>
-               <p><a href="index.php?route=common/story">Our Story</a>
-                  <br /><a href="index.php?route=common/contact">Contact</a>
-                  <br /><a href="index.php?route=common/join">Join Our Team</a>
-               </p>
+               <ul>
+                  <li><a href="index.php?route=information/information&information_id=3">Privacy Policy</a></li>
+                  <li><a href="index.php?route=information/information&information_id=6">Returns</a></li>
+                  <li><a href="index.php?route=information/information&information_id=5">FAQs</a></li>
+
+               </ul>
             </div>
          </div>
          <div class="row">
             <div style="text-align:center" ; class="col-xs-10 col-xs-offset-1">
-               <h5>KEEP UP WITH US</h5>
-               <a target="_blank" href="https://www.facebook.com/goodworkassociates/"><img src="image/icons/fb_icon.png" width="40"></a>&nbsp;&nbsp;
-               <a target="_blank" href="https://www.instagram.com/goodworkassociates/"><img src="image/icons/insta_icon.png" width="55"></a>&nbsp;&nbsp;
-               <a target="_blank" href="https://in.pinterest.com/goodworkindia/"><img src="image/icons/pinterest.png" width="35"></a>&nbsp;&nbsp;
+               <h5 style="color: #fff;">KEEP UP WITH US</h5>
+               <a target="_blank" href="https://www.facebook.com/goodworkassociates/"><img src="image/icons/fb_icon.png"
+                     width="40"></a>&nbsp;&nbsp;
+               <a target="_blank" href="https://www.instagram.com/goodworkassociates/"><img
+                     src="image/icons/insta_icon.png" width="55"></a>&nbsp;&nbsp;
+               <a target="_blank" href="https://in.pinterest.com/goodworkindia/"><img src="image/icons/pinterest.png"
+                     width="35"></a>&nbsp;&nbsp;
                <br />
 
             </div>
@@ -167,17 +190,17 @@ Opposite westside store, Jaipur 302002</h6></a>
       <ul style="list-style: none;">
 
          <li>
-                    Copyright © 2024 Goodwork Daily. All Rights Reserved. Developed By
-                    <a href="https://theodin.in/" style="color:#fff;    text-decoration: underline;">
-                        @The Odin</a>
-                 </li>
+            Copyright © 2024 Goodwork Daily. All Rights Reserved. Developed By
+            <a href="https://theodin.in/" style="color:#fff;    text-decoration: underline;">
+               @The Odin</a>
+         </li>
       </ul>
    </div>
 </footer>
 
 <script>
-   $(document).ready(function() {
-      $("#search_opener").click(function() {
+   $(document).ready(function () {
+      $("#search_opener").click(function () {
          $(".mob_menu_opened").slideUp();
          $("#overlay_mob").fadeOut();
 
@@ -186,7 +209,7 @@ Opposite westside store, Jaipur 302002</h6></a>
 
       })
 
-      $("#overlay_mob").click(function() {
+      $("#overlay_mob").click(function () {
          $(this).fadeOut();
          $('.mob_menu_opened').animate({
             left: "-250px"
@@ -194,7 +217,7 @@ Opposite westside store, Jaipur 302002</h6></a>
 
 
       })
-      $("#mob_menu_opener").click(function() {
+      $("#mob_menu_opener").click(function () {
          $(".search_opened").slideUp();
          $("#overlay_mob").fadeToggle();
          $("#overlay_mob1").fadeOut();
@@ -204,12 +227,12 @@ Opposite westside store, Jaipur 302002</h6></a>
 
       })
 
-      $("#mob_mood_opener").click(function() {
+      $("#mob_mood_opener").click(function () {
          $(".mob_mood_opened").slideToggle();
          $("#mob_mood_opener .fa-plus").toggleClass('fa-minus');
       })
 
-      $("#mob_mood_opener1").click(function() {
+      $("#mob_mood_opener1").click(function () {
          $(".mob_mood_opened1").slideToggle();
          $("#mob_mood_opener1 .fa-plus").toggleClass('fa-minus');
       })
@@ -218,18 +241,18 @@ Opposite westside store, Jaipur 302002</h6></a>
 
       var first_time = 1;
 
-      $("#mob_cart").mouseover(function() {
+      $("#mob_cart").mouseover(function () {
          $("#overlay_mob").slideToggle();
          $("#cart").stop().slideDown('slow');
       })
-      $(".cart_wrap").mouseleave(function() {
+      $(".cart_wrap").mouseleave(function () {
          $("#overlay_mob").slideToggle();
          $("#cart").stop().slideUp('slow');
       })
 
 
 
-      $('#search_icon').click(function() {
+      $('#search_icon').click(function () {
          if (first_time) {
             $("#search").fadeIn();
             first_time = 0;
@@ -246,20 +269,20 @@ Opposite westside store, Jaipur 302002</h6></a>
          }
       })
 
-      $("#menu2").mouseenter(function() {
+      $("#menu2").mouseenter(function () {
          $("#menu_shop ul").stop().fadeOut();
          $("#menu2 ul").stop().fadeIn();
       })
 
-      $("#menu2").mouseleave(function() {
+      $("#menu2").mouseleave(function () {
          $("#menu2 ul").stop().fadeOut();
       })
 
-      $("#menu_shop").mouseenter(function() {
+      $("#menu_shop").mouseenter(function () {
          $("#menu_shop ul").stop().fadeIn();
       })
 
-      $("#menu_shop").mouseleave(function() {
+      $("#menu_shop").mouseleave(function () {
          $("#menu2 ul").stop().fadeOut();
          $("#menu_shop ul").stop().fadeOut();
       })
@@ -268,7 +291,7 @@ Opposite westside store, Jaipur 302002</h6></a>
    })
 </script>
 <script>
-   $('#mob_search_bt').on('click', function() {
+   $('#mob_search_bt').on('click', function () {
       url = $('base').attr('href') + 'index.php?route=product/search';
 
       var value = $('#mob_search_term').val();
@@ -280,15 +303,15 @@ Opposite westside store, Jaipur 302002</h6></a>
       location = url;
    });
 
-   $('#mob_search_term').on('keydown', function(e) {
+   $('#mob_search_term').on('keydown', function (e) {
       if (e.keyCode == 13) {
          $('#mob_search_bt').trigger('click');
       }
    });
 </script>
 <script>
-   $(document).ready(function(e) {
-      $("#join_us").click(function() {
+   $(document).ready(function (e) {
+      $("#join_us").click(function () {
          if (isEmail($("#mail_boxj").val())) {
             $.ajax({
                type: 'POST',
@@ -296,12 +319,12 @@ Opposite westside store, Jaipur 302002</h6></a>
                data: {
                   email: $("#mail_boxj").val()
                },
-               success: function(json) {
+               success: function (json) {
                   console.log(json);
                }
             })
 
-            $("#subs_mes #cont").fadeOut(function() {
+            $("#subs_mes #cont").fadeOut(function () {
                $("#subs_mes").html('<h3 style="text-align:center; margin-top:50px">Thanks</h3>');
             });
 

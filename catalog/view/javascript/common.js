@@ -57,7 +57,7 @@ $(document).ready(function() {
 		var value = $('header #search input[name=\'search\']').val();
 
 		if (value) {
-			url += '&search=' + encodeURIComponent(value);
+			url += '&search=' + encodeURIComponent(value) + '&description=true';
 		}
 
 		location = url;
@@ -94,21 +94,20 @@ $(document).ready(function() {
 
 	// Product Grid
 	$('#grid-view').click(function() {
+		$('#content .product-layout > .clearfix').remove();
+
 		// What a shame bootstrap does not take into account dynamically loaded columns
-		var cols = $('#column-right, #column-left').length;
+		cols = $('#column-right, #column-left').length;
 
 		if (cols == 2) {
-			$('#content .product-list').attr('class', 'product-layout product-grid col-lg-6 col-md-6 col-sm-12 col-xs-12');
+			$('#content .product-layout').attr('class', 'product-layout product-grid col-lg-6 col-md-6 col-sm-12 col-xs-12');
 		} else if (cols == 1) {
-			$('#content .product-list').attr('class', 'product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12');
+			$('#content .product-layout').attr('class', 'product-layout product-grid col-lg-3 col-md-3 col-sm-6 col-xs-6');
 		} else {
-			$('#content .product-list').attr('class', 'product-layout product-grid col-lg-3 col-md-3 col-sm-6 col-xs-12');
+			$('#content .product-layout').attr('class', 'product-layout product-grid col-lg-3 col-md-3 col-sm-6 col-xs-6');
 		}
 
-		$('#list-view').removeClass('active');
-		$('#grid-view').addClass('active');
-
-		localStorage.setItem('display', 'grid');
+		 localStorage.setItem('display', 'grid');
 	});
 
 	if (localStorage.getItem('display') == 'list') {
@@ -137,7 +136,10 @@ $(document).ready(function() {
 
 // Cart add remove functions
 var cart = {
+	
 	'add': function(product_id, quantity) {
+
+
 		$.ajax({
 			url: 'index.php?route=checkout/cart/add',
 			type: 'post',
@@ -150,26 +152,24 @@ var cart = {
 				$('#cart > button').button('reset');
 			},
 			success: function(json) {
-				$('.alert-dismissible, .text-danger').remove();
+
+				$('.alert, .text-danger').remove();
 
 				if (json['redirect']) {
 					location = json['redirect'];
 				}
 
 				if (json['success']) {
-					$('.cart-counter-header').html(json['total'][0]);
-        
-                setTimeout(function () {
-					$("#cart-total").html(json['total']);
-					let t = json['total'].split('-');
-					$('.slide-cart-total').html(t[1]);
-				}, 100);
+					$('#content').parent().before('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
 
-				$('.cart-body').load('index.php?route=common/slide_cart/info div.cart-body');
+					// Need to set timeout otherwise it wont update the total
+					setTimeout(function () {
+						$('#cart > button').html('<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>');
+					}, 100);
 
-       
-					$('.cart_backdrop').fadeIn();
-					$(".cart").animate({right:'0px'})
+					$('html, body').animate({ scrollTop: 0 }, 'slow');
+
+					$('#cart > ul').load('index.php?route=common/cart/info ul li');
 				}
 			},
 			error: function(xhr, ajaxOptions, thrownError) {
@@ -219,20 +219,18 @@ var cart = {
 				$('#cart > button').button('reset');
 			},
 			success: function(json) {
-				console.log(json);
 				// Need to set timeout otherwise it wont update the total
 				setTimeout(function () {
-					$("#cart-total").html(json['total']);
-					let t = json['total'].split('-');
-					$('.slide-cart-total').html(t[1]);
-					$('.cart-counter-header').html(json['total'][0]);
+					$('#cart > button').html('<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>');
 				}, 100);
 
 				if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {
 					location = 'index.php?route=checkout/cart';
 				} else {
-					$('.cart-body').load('index.php?route=common/slide_cart/info div.cart-body');
+					$('#cart > ul').load('index.php?route=common/cart/info ul li');
 				}
+				$('#cart #product_mark').load('index.php?route=common/cart/info #product_mark');
+			
 			},
 			error: function(xhr, ajaxOptions, thrownError) {
 				alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
@@ -284,24 +282,20 @@ var wishlist = {
 			data: 'product_id=' + product_id,
 			dataType: 'json',
 			success: function(json) {
-
-
-				
-				$('.alert-dismissible').remove();
+				$('.alert').remove();
 
 				if (json['redirect']) {
 					location = json['redirect'];
 				}
 
 				if (json['success']) {
-					console.log(JSON.stringify(json));
-					$('#content').parent().before('<div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> ' + json['success'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+					$('#content').parent().before('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
 				}
 
 				$('#wishlist-total span').html(json['total']);
 				$('#wishlist-total').attr('title', json['total']);
 
-				
+				$('html, body').animate({ scrollTop: 0 }, 'slow');
 			},
 			error: function(xhr, ajaxOptions, thrownError) {
 				alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
@@ -321,10 +315,10 @@ var compare = {
 			data: 'product_id=' + product_id,
 			dataType: 'json',
 			success: function(json) {
-				$('.alert-dismissible').remove();
+				$('.alert').remove();
 
 				if (json['success']) {
-					$('#content').parent().before('<div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> ' + json['success'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+					$('#content').parent().before('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
 
 					$('#compare-total').html(json['total']);
 
@@ -362,7 +356,7 @@ $(document).delegate('.agree', 'click', function(e) {
 			html += '        <h4 class="modal-title">' + $(element).text() + '</h4>';
 			html += '      </div>';
 			html += '      <div class="modal-body">' + data + '</div>';
-			html += '    </div>';
+			html += '    </div';
 			html += '  </div>';
 			html += '</div>';
 

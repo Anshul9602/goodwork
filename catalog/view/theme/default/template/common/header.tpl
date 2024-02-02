@@ -42,6 +42,7 @@
     <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
   <?php } ?>
   <script src="catalog/view/javascript/common.js?v1.1217" type="text/javascript"></script>
+  <script src="catalog/view/javascript/common.js" type="text/javascript"></script>
   <?php foreach ($links as $link) { ?>
     <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
   <?php } ?>
@@ -51,6 +52,23 @@
   <?php foreach ($analytics as $analytic) { ?>
     <?php echo $analytic; ?>
   <?php } ?>
+  <style>
+    @media (max-width:768px){
+      p{
+        font-size: 14px !important;
+        }
+        h1,h2,h3{
+        font-size: 22px !important;
+        }
+        h4,h5,h6{
+        font-size: 17px !important;
+        }
+        .main_logo{
+        
+        width: 100px !important;}
+    
+    }
+  </style>
 </head>
 
 <body class="<?php echo $class; ?>">

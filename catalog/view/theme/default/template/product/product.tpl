@@ -1,13 +1,11 @@
 <?php echo $header; ?>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 <style>
   #p-container {
     padding-top: 0px;
   }
-
-
-
-
 
   .panel-default {
     border: none;
@@ -26,7 +24,6 @@
     padding: 0;
     border-radius: 0;
     color: #212121;
-
     border-color: #ccc;
     background: none;
     border-left: none;
@@ -112,7 +109,6 @@
     margin: auto;
   }
 
-
   .slider-nav .slick-current .img-responsive {
     border: 2px solid;
   }
@@ -125,22 +121,48 @@
     padding-left: 10px;
     margin-top: 10px;
   }
-  .alert{
-  color:black !important;}
-  .alert a{
-  color:green !important;}
+
+  .alert {
+    color: black !important;
+  }
+
+  .alert a {
+    color: green !important;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .arow {
+      display: block !important;
+    }
+
+    #content {
+      max-width: 100% !important;
+    }
+    h2,h3{
+    font-size: 20px !important;}
+    h4 a{
+    font-size: 13px !important;}
+    p{
+    font-size: 13px !important;}
+    h1{
+    font-size: 22px !important;}
+
+    .mobp{
+    padding-top: 20px;
+    }
+  }
 </style>
 
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/slick.css" />
 <script type="text/javascript" src="catalog/view/javascript/slick.min.js"></script>
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/slick-theme.css" />
 
-<section id="product-product"style="padding-top: 20px;">
+<section id="product-product" style="padding-top: 20px;">
 
   <div id="content" style="max-width: 80%;width:100%;margin:auto;color:black;">
 
     <br />
-    <div class="row" style="justify-content: space-between; display:flex;">
+    <div class="row arow" style="justify-content: space-between; display:flex;">
       <?php echo $content_top; ?>
       <div class="col-md-6">
         <?php if ($thumb || $images) { ?>
@@ -194,11 +216,11 @@
             </a></li>
           <?php } ?>
         </ul>
-        <div class="row">
-          <h1 class="product-heading col-md-10">
+        <div class="row" style="display:flex;">
+          <h1 class="product-heading col-md-10 col-9">
             <?php echo strtolower($heading_title); ?>
           </h1>
-          <button type="button" data-toggle="tooltip" class="btn btn-default col-md-2"
+          <button type="button" data-toggle="tooltip" class="btn btn-default col-md-2 col-3"
             title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product_id; ?>');"
             style="margin-top: 20px;">
             <i class="fa fa-heart" style="font-size: 20px;"></i>
@@ -221,7 +243,7 @@
             <?php echo $reward; ?>
           </li>
           <?php } ?>
-          
+
         </ul>
         <?php if ($price) { ?>
         <ul style="padding-left: 15px;" class="list-unstyled">
@@ -433,8 +455,8 @@
         </div>
       </div>
 </section>
-
-<section class="container" style="padding-top:5px;">
+<hr>
+<section class="container mbp" style="padding-top:5px;">
 
   <?php if ($products) { ?>
   <h2 class="p-4 text-center" style="width: 50%; margin:3% auto;padding-bottom:10px;border-bottom: 1px solid;">

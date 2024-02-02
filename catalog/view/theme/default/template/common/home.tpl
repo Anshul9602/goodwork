@@ -19,10 +19,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   }
 
   @media only screen and (max-width: 400px) {
-    .ttb button{
-    font-size: 13px !important;
-    padding: 10px !important;
+    .ttb button {
+      font-size: 13px !important;
+      padding: 10px !important;
     }
+
     #clockdiv {
       font-size: 15px;
     }
@@ -73,25 +74,38 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       max-width: 50% !important;
       width: 100%;
     }
+
     .col-8 {
       max-width: 66% !important;
       width: 100%;
     }
+
     .col-4 {
       max-width: 33% !important;
       width: 100%;
     }
-    .stay-div img{
-    width: 50px !important;
+
+    .stay-div img {
+      width: 50px !important;
     }
 
     .ovd {
 
       bottom: 0 !important;
     }
-.mp0{
-padding:1em 0em !important;
-}
+
+    .slick-prev {
+      left: 15px !important;
+    }
+
+    .slick-next {
+      right: 15px !important;
+    }
+
+    .mp0 {
+      padding: 1em 0em !important;
+    }
+
     .mobp {
       margin-top: 30px;
     }
@@ -192,11 +206,12 @@ padding:1em 0em !important;
     </div>
 
     <div id="London" class="tabcontent" style="    margin-top: 7%;">
-      <div class="splide sp1" role="group" aria-label="Splide Basic HTML Example">
+   
+      <div class="splide sp1 is-overflow">
         <div class="splide__track">
           <ul class="splide__list">
             <?php for($j=0; $j< sizeof($newcat);$j++){?>
-            <li class="splide__slide" style="border: 2px solid red;">
+            <li class="splide__slide">
 
 
               <div class="" style="padding: 1em;">
@@ -226,7 +241,7 @@ padding:1em 0em !important;
     </div>
 
     <div id="Paris" class="tabcontent" style="display: none; margin-top: 7%;">
-      <div class="splide sp2" role="group" aria-label="Splide Basic HTML Example">
+      <div class="splide sp2">
         <div class="splide__track">
           <ul class="splide__list">
             <?php for($j=0; $j< sizeof($bestcat);$j++){?>
@@ -401,7 +416,7 @@ padding:1em 0em !important;
           <div class="image-div" style="position: relative;">
             <a href="<?php echo $products1[$j]['href']?>"><img class="img-responsive"
                 src="<?php echo $products1[$j]['thumb']?>" alt=""></a>
-            <a class="cart-hover" href="">ADD TO CART</a>
+
           </div>
 
           <a href="<?php echo $products1[$j]['href']?>">
@@ -441,48 +456,7 @@ padding:1em 0em !important;
   </div>
 </section>
 
-<script type="text/javascript">
-  $(".slider-khatu").slick({
-    dots: true,
-    infinite: true,
-    arrow: true,
-    speed: 1000,
-    fade: true,
-    cssEase: "ease-in-out",
-    autoplay: true,
-    autoplaySpeed: 4000,
-  });
 
-  $(".product-slider").slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    dots: false,
-    arrows: true,
-  });
-
-  $(".slider-trend").slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    dots: true,
-    arrows: false,
-    speed: 2000,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 650,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-    ],
-  });
-</script>
 <script>
   var splide = new Splide('.sp1', {
     type: 'loop',
@@ -562,5 +536,19 @@ padding:1em 0em !important;
 
   const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
   initializeClock('clockdiv', deadline);
+</script>
+<script type="text/javascript">
+  $(".slider-khatu").slick({
+    dots: true,
+    infinite: true,
+    arrow: true,
+    speed: 1000,
+    fade: true,
+    cssEase: "ease-in-out",
+    autoplay: true,
+    autoplaySpeed: 4000,
+  });
+
+
 </script>
 <?php echo $footer; ?>
