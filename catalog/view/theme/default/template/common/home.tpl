@@ -23,6 +23,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       font-size: 13px !important;
       padding: 10px !important;
     }
+     #splide01 {
+        width: 100%;
+    }
+    .splide__slide {
+        width: 100% !important;
+    }
 
     #clockdiv {
       font-size: 15px;
