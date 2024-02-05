@@ -17,19 +17,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     margin: -15px;
     /* Add negative margin to counteract the padding on the columns (adjust as needed) */
   }
-
+.mob{
+display: none;
+}
   @media only screen and (max-width: 400px) {
     .ttb button {
       font-size: 13px !important;
       padding: 10px !important;
     }
-     #splide01 {
-        width: 100%;
-    }
-    .splide__slide {
-        width: 100% !important;
+
+    .splide__list {
+      width: 100%;
     }
 
+  .desk{
+  display: none;}
+  .mob{
+    display: block;
+    }
     #clockdiv {
       font-size: 15px;
     }
@@ -212,10 +217,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </div>
 
     <div id="London" class="tabcontent" style="    margin-top: 7%;">
-   
-      <div class="splide sp1 is-overflow">
-        <div class="splide__track">
-          <ul class="splide__list">
+
+      <div class="splide sp1 desk">
+        <div class="splide__track " >
+          <ul class="splide__list" style="width:100%">
             <?php for($j=0; $j< sizeof($newcat);$j++){?>
             <li class="splide__slide">
 
@@ -243,12 +248,45 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <?php }?>
           </ul>
         </div>
+      
+      </div>
+      <div class="splide sp11 mob">
+        <div class="splide__track " style="overflow: visible;" >
+          <ul class="splide__list" style="width:100%">
+            <?php for($j=0; $j< sizeof($newcat);$j++){?>
+            <li class="splide__slide">
+
+
+              <div class="" style="padding: 1em;">
+                <div class="image-div" style="position: relative;">
+                  <a href="<?php echo $newcat[$j]['href']?>"><img class="img-responsive"
+                      src="<?php echo $newcat[$j]['thumb']?>" alt=""></a>
+
+                </div>
+
+                <a href="<?php echo $newcat[$j]['href']?>">
+                  <h6>
+                    <?php echo $newcat[$j]['name']?>
+                  </h6>
+                  <p>
+                    <?php echo $newcat[$j]['price']?>
+                  </p>
+                  <!-- <p><?php echo $products1[$j]['rating']?></p> -->
+                </a>
+              </div>
+
+
+            </li>
+            <?php }?>
+          </ul>
+        </div>
+      
       </div>
     </div>
 
     <div id="Paris" class="tabcontent" style="display: none; margin-top: 7%;">
-      <div class="splide sp2">
-        <div class="splide__track">
+      <div class="splide sp2 desk">
+        <div class="splide__track ">
           <ul class="splide__list">
             <?php for($j=0; $j< sizeof($bestcat);$j++){?>
             <li class="splide__slide">
@@ -265,6 +303,39 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   <h4>
                     <?php echo $bestcat[$j]['name']?>
                   </h4>
+                  <p>
+                    <?php echo $bestcat[$j]['price']?>
+                  </p>
+                  <!-- <p><?php echo $products1[$j]['rating']?></p> -->
+                </a>
+              </div>
+
+
+            </li>
+            <?php }?>
+          </ul>
+        </div>
+       
+      </div>
+      <div class="splide sp21 mob">
+      
+        <div class="splide__track "style="overflow: visible;">
+          <ul class="splide__list">
+            <?php for($j=0; $j< sizeof($bestcat);$j++){?>
+            <li class="splide__slide">
+
+
+              <div class="" style="padding: 1em;">
+                <div class="image-div" style="position: relative;">
+                  <a href="<?php echo $bestcat[$j]['href']?>"><img class="img-responsive"
+                      src="<?php echo $bestcat[$j]['thumb']?>" alt=""></a>
+
+                </div>
+
+                <a href="<?php echo $bestcat[$j]['href']?>">
+                  <h6>
+                    <?php echo $bestcat[$j]['name']?>
+                  </h6>
                   <p>
                     <?php echo $bestcat[$j]['price']?>
                   </p>
@@ -464,6 +535,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 
 <script>
+
+
   var splide = new Splide('.sp1', {
     type: 'loop',
     perPage: 4,
@@ -479,7 +552,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       }
     }
   });
+  splide.mount();
 
+  var splide = new Splide('.sp11', {
+    type: 'loop',
+    perPage: 2,
+    autoplay: true,
+    pagination: false,
+   
+  });
   splide.mount();
 
   var splide = new Splide('.sp2', {
@@ -497,7 +578,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       }
     }
   });
+  splide.mount();
 
+  var splide = new Splide('.sp21', {
+    type: 'loop',
+    perPage: 2,
+    autoplay: true,
+    pagination: false,
+    
+  });
   splide.mount();
 
   function getTimeRemaining(endtime) {
